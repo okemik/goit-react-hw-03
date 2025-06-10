@@ -1,24 +1,63 @@
 .contact {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 14px 20px;
+    margin: 8px;
+    min-width: 250px;
+    /* Kart genişliği */
+    flex: 1 1 250px;
+    /* Flex grow, shrink, basis */
+    max-width: 280px;
+    transition: box-shadow 0.3s ease;
+}
+
+.contact:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 14px;
+    user-select: none;
 }
 
 .text {
-    font-size: 14px;
-    color: #222;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2c3e50;
+    flex: 1;
+    margin-right: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .deleteBtn {
-    background-color: #d32f2f;
+    background-color: #e74c3c;
     border: none;
-    padding: 6px 12px;
-    border-radius: 4px;
+    padding: 8px 12px;
+    border-radius: 8px;
     color: white;
     font-weight: 600;
+    font-size: 16px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
 }
 
 .deleteBtn:hover {
-    background-color: #b71c1c;
+    background-color: #c0392b;
 }

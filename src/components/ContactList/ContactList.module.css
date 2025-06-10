@@ -1,10 +1,16 @@
 .list {
     list-style: none;
     padding-left: 0;
-    max-width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    /* Bir satır dolunca alt satıra geç */
+    gap: 12px;
+    /* Kartlar arası boşluk */
+    justify-content: flex-start;
+    max-width: 900px;
+    /* İstersen genişlik sınırı */
 }
 
 .item {
-    padding: 8px 0;
-    border-bottom: 1px solid #ddd;
+    list-style: none;
 }
