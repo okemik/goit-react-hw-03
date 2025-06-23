@@ -10,7 +10,7 @@
     /* Kart genişliği */
     flex: 1 1 250px;
     /* Flex grow, shrink, basis */
-    max-width: 280px;
+    max-width: 500px;
     transition: box-shadow 0.3s ease;
 }
 
