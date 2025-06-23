@@ -15,8 +15,9 @@ const initialContacts = [
 function App() {
   const [contacts, setContacts] = useState(() => {
     const saved = localStorage.getItem(LOCAL_STORAGE_KEY);
-    return saved ? JSON.parse(saved) : [];
+    return saved ? JSON.parse(saved) : initialContacts;
   });
+
   const [filter, setFilter] = useState("");
 
   useEffect(() => {
@@ -40,7 +41,7 @@ function App() {
   );
 
   return (
-    <div>
+    <div style={{ padding: "20px" }}>
       <h1>Phonebook</h1>
       <ContactForm onAdd={addContact} />
       <SearchBox filter={filter} onFilterChange={handleFilterChange} />
